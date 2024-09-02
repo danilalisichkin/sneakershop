@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sneaker-shop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sneaker-shop
+    username: api
+    password: api
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: public
+  logging:
+    level:
+      org:
+        springframework:
+          security: DEBUG
+server:
+  servlet:
+    context-path: /sneaker-shop/api/v1
+  port: 8080
+app:
+  name: sneaker-shop
+  version: v1
+token:
+  jwtSecret: fuhP3iWABIfdLKn0u7r6eZSK0wq4I/DRPUGPt+p0HjDZbo+J6dHwQ6jW1GcHm7AdTtdW4Ff1I1l2gFphweYMw==1
+  jwtIssuer: lisichkindanila@gmail.com
+  jwtLifetime: 1d

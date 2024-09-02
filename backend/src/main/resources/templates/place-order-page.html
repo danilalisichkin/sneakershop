@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title text="SneakerShop"></title>
+    <link rel="stylesheet" href="../static/css/place-order-page-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navi-href-container" id="navi-top-bar">
+        <!-- Тут сделать динамически -->
+        <a class="href-tile" id="home-href" href="./home-page.html">
+          <img
+            src="../static/icons/home.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Home</p>
+        </a>
+        <a class="href-tile" id="href" href="./catalog-page.html">
+          <img src="../static/icons/catalog.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Catalog</p>
+        </a>
+        <a class="href-tile" id="cart-href" href="./shopping-cart-page.html">
+          <img
+            src="../static/icons/cart.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text active">Cart</p>
+        </a>
+        <a class="href-tile" id="sign-in-href" href="./sign-in-page.html">
+          <img
+            src="../static/icons/sign-in.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign in</p>
+        </a>
+        <a class="href-tile" id="user-profile-href" href="./profile-page.html">
+          <img
+            src="../static/icons/profile.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Profile</p>
+        </a>
+        <a class="href-tile" id="sign-out-href" href="null">
+          <img
+            src="../static/icons/sign-out.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign out</p>
+        </a>
+      </nav>
+      <h1 id="shop-title">SneakerShop</h1>
+    </header>
+    <main>
+      <div class="center-page-content">
+        <div class="placing-order">
+          <h3 class="placing-caption">Placing an order</h3>
+          <form class="placing-form">
+            <p class="form-region-caption">Delivery address</p>
+            <div class="input-container">
+              <label for="city">City*</label>
+              <input
+                type="text"
+                id="city"
+                name="address_city"
+                required="true"
+                maxlength="20"
+              />
+            </div>
+            <div class="input-container">
+              <label for="street">Street*</label>
+              <input
+                type="text"
+                id="street"
+                name="address_street"
+                required="true"
+                maxlength="20"
+              />
+            </div>
+            <div class="input-container-combined">
+              <div class="input-container-short">
+                <label for="house*">House*</label>
+                <input
+                  type="text"
+                  id="house"
+                  name="address_house"
+                  required="true"
+                  maxlength="3"
+                  pattern="[0-9]*"
+                />
+              </div>
+              <div class="input-container-short">
+                <label for="flat">Flat </label>
+                <input
+                  type="text"
+                  id="flat"
+                  name="address_flat"
+                  required="false"
+                  maxlength="3"
+                  pattern="[0-9]*"
+                />
+              </div>
+            </div>
+            <p class="form-region-caption">Payment method</p>
+            <p class="small-general-text">
+              we will refund your money if the goods are not suitable
+            </p>
+            <div class="payment-container">
+              <div class="payment-time">
+                <p>Payment time</p>
+                <div class="icon-container">
+                  <img
+                    src="../static/icons/calendar-now.svg"
+                    class="icon inactive"
+                    alt="shoes"
+                  />
+                  <img
+                    src="../static/icons/hands-with-package.svg"
+                    class="icon"
+                    alt="shoes"
+                  />
+                </div>
+                <p id="pay-time">upon receipt</p>
+              </div>
+              <div class="payment-method">
+                <p>Payment method</p>
+                <div class="icon-container">
+                  <img src="../static/icons/wallet.svg" class="icon inactive" />
+                  <img src="../static/icons/credit-card.svg" class="icon" />
+                </div>
+                <p id="pay-method">credit card</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="right-side-bar-container">
+          <div class="right-side-bar">
+            <p class="order-caption">Your order</p>
+            <div class="order-items-products-miniature">
+              <div class="product">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+                <p class="quantity">1pc</p>
+              </div>
+              <div class="product">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+                <p class="quantity">3pc</p>
+              </div>
+              <div class="product">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+                <p class="quantity">2pc</p>
+              </div>
+              <div class="product">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+                <p class="quantity">1pc</p>
+              </div>
+            </div>
+            <p id="order-total-quantity">7 items</p>
+            <div>
+              <p class="order-total-price--caption">Total:</p>
+              <p id="order-total-price">$332.99</p>
+            </div>
+            <button class="place-order-button">Place an order</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="site-credits">
+        <h2 class="shop-title">SneakerShop</h2>
+        <div class="average-text">
+          <p>© all rights are secured</p>
+          <p>developed by Danila Lisichkin</p>
+        </div>
+        <div class="developer-info">
+          <a
+            id="github-href"
+            class="contact-container"
+            href="https://github.com/danilalisichkin"
+          >
+            <img src="../static/icons/github.svg" class="icon" alt="icon" />
+            <p class="average-text">danilalisichkin</p>
+          </a>
+          <a
+            id="linkedin-href"
+            class="contact-container"
+            href="https://www.linkedin.com/in/danila-lisichkin-48b088291"
+          >
+            <img src="../static/icons/linkedin.svg" class="icon" alt="icon" />
+            <p class="average-text">Danila Lisichkin</p>
+          </a>
+          <a
+            id="mail-href"
+            class="contact-container"
+            href="mailto:lisichkindanila@gmail.com?subject=SneakerShop&body=Hi!"
+          >
+            <img src="../static/icons/mail.svg" class="icon" alt="icon" />
+            <p class="average-text">lisichkindanila@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

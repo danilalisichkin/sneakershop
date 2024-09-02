@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title text="SneakerShop"></title>
+    <link rel="stylesheet" href="../static/css/product-card-page-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navi-href-container" id="navi-top-bar">
+        <!-- Тут сделать динамически -->
+        <a class="href-tile" id="home-href" href="./home-page.html">
+          <img
+            src="../static/icons/home.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Home</p>
+        </a>
+        <a class="href-tile" id="href" href="./catalog-page.html">
+          <img src="../static/icons/catalog.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Catalog</p>
+        </a>
+        <a class="href-tile" id="cart-href" href="./shopping-cart-page.html">
+          <img
+            src="../static/icons/cart.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Cart</p>
+        </a>
+        <a class="href-tile" id="sign-in-href" href="./sign-in-page.html">
+          <img
+            src="../static/icons/sign-in.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign in</p>
+        </a>
+        <a class="href-tile" id="user-profile-href" href="./profile-page.html">
+          <img
+            src="../static/icons/profile.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Profile</p>
+        </a>
+        <a class="href-tile" id="sign-out-href" href="null">
+          <img
+            src="../static/icons/sign-out.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign out</p>
+        </a>
+      </nav>
+      <h1 id="shop-title">SneakerShop</h1>
+    </header>
+    <main>
+      <div class="center-page-content">
+        <div class="product-info">
+          <div class="product-image-grid">
+            <img
+              src="https://nbalance.by/wp-content/uploads/2020/12/mr530sg_nb_02_i.jpg"
+              class="image image--big"
+              id="product-img-1"
+              alt="shoes"
+            />
+            <img
+              src="https://nbalance.by/wp-content/uploads/2020/12/mr530sg_nb_02_i.jpg"
+              class="image image--big"
+              id="product-img-2"
+              alt="shoes"
+            />
+            <img
+              src="https://nbalance.by/wp-content/uploads/2020/12/mr530sg_nb_02_i.jpg"
+              class="image"
+              id="product-img-3"
+              alt="shoes"
+            />
+            <img
+              src="https://nbalance.by/wp-content/uploads/2020/12/mr530sg_nb_02_i.jpg"
+              class="image"
+              id="product-img-4"
+              alt="shoes"
+            />
+            <img
+              src="https://nbalance.by/wp-content/uploads/2020/12/mr530sg_nb_02_i.jpg"
+              class="image"
+              id="product-img-5"
+              alt="shoes"
+            />
+          </div>
+          <div id="product-description">
+            <p>
+              Lace up and feel the legacy in this champion running shoe that
+              helped define the ‘90s. Worn by presidents, revolutionized through
+              collabs and celebrated through rare colorways, its Waffle outsole,
+              visible Nike Air cushioning and striking visuals keep it alive and
+              well.
+            </p>
+          </div>
+          <ol class="product-details">
+            <li class="detail">
+              <p class="caption">Article</p>
+              <p id="product-article" class="value">1234</p>
+            </li>
+            <li class="detail">
+              <p class="caption">Type</p>
+              <p id="product-type" class="value">Sneakers</p>
+            </li>
+            <li class="detail">
+              <p class="caption">Gender</p>
+              <p id="product-gender" class="value">Female</p>
+            </li>
+            <li class="detail">
+              <p class="caption">Season</p>
+              <p id="product-season" class="value">Spring, summer</p>
+            </li>
+            <li class="detail">
+              <p class="caption">Color</p>
+              <p id="product-color" class="value">White, black</p>
+            </li>
+            <li class="detail">
+              <p class="caption">Material</p>
+              <p id="product-material" class="value">Leather, synthetic</p>
+            </li>
+            <li class="detail">
+              <p class="caption">Style</p>
+              <p id="product-style" class="value">Sport</p>
+            </li>
+          </ol>
+        </div>
+        <div class="right-side-bar-container">
+          <div class="right-side-bar">
+            <p id="product-brand-name">Nike</p>
+            <p id="product-model-name">Air Max 90</p>
+            <p id="product-price">$109.99</p>
+            <div class="size-selection-container">
+              <form>
+                <select name="field" id="product-size" class="size-select">
+                  <!-- Тут сделать динамически -->
+                  <option value="42.0">42 EU</option>
+                  <option value="43.0">43 EU</option>
+                  <option value="45.0">45 EU</option>
+                  <option value="46.5">46.5 EU</option>
+                  <option value="47.0">47 EU</option>
+                </select>
+              </form>
+            </div>
+            <button class="add-to-cart-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="site-credits">
+        <h2 class="shop-title">SneakerShop</h2>
+        <div class="average-text">
+          <p>© all rights are secured</p>
+          <p>developed by Danila Lisichkin</p>
+        </div>
+        <div class="developer-info">
+          <a
+            id="github-href"
+            class="contact-container"
+            href="https://github.com/danilalisichkin"
+          >
+            <img src="../static/icons/github.svg" class="icon" alt="icon" />
+            <p class="average-text">danilalisichkin</p>
+          </a>
+          <a
+            id="linkedin-href"
+            class="contact-container"
+            href="https://www.linkedin.com/in/danila-lisichkin-48b088291"
+          >
+            <img src="../static/icons/linkedin.svg" class="icon" alt="icon" />
+            <p class="average-text">Danila Lisichkin</p>
+          </a>
+          <a
+            id="mail-href"
+            class="contact-container"
+            href="mailto:lisichkindanila@gmail.com?subject=SneakerShop&body=Hi!"
+          >
+            <img src="../static/icons/mail.svg" class="icon" alt="icon" />
+            <p class="average-text">lisichkindanila@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

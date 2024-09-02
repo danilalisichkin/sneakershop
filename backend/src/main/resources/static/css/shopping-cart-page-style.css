@@ -1,0 +1,277 @@
+.navi-href-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #050e40;
+  border: solid #050e40 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.href-tile {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+}
+
+.href-tile:hover {
+  opacity: 0.4;
+}
+
+.href-tile.active {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.href-tile-icon {
+  height: 100%;
+}
+
+.href-tile-text {
+  padding: 5px;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: sans-serif, serif;
+}
+
+#shop-title {
+  font-family: sans-serif, serif;
+  color: #050e40;
+  font-size: 28px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#shop-title:hover {
+  cursor: pointer;
+}
+
+.center-page-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 595px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-items .item {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  padding: 10px;
+  background-color: #ececec;
+}
+
+.cart-items .item:hover {
+  background-color: #ebe8e3;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.item .image-container {
+  height: 100%;
+}
+
+.image-container .image {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.item .brand-name {
+  width: 20%;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.item .model-name {
+  width: 25%;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.item .size {
+  width: 10%;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.item .price {
+  width: 10%;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.item .quantity {
+  width: 10%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
+  height: 20px;
+}
+
+.item .quantity:hover {
+  border-color: black;
+}
+
+.item .remove-button {
+  width: 10%;
+  height: 20px;
+  background: none;
+  border: none;
+  aspect-ratio: 1/1;
+}
+
+.right-side-bar-container {
+  height: 1000px;
+  width: 200px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-side-bar {
+  height: fit-content;
+  width: 100%;
+  top: 100px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.right-side-bar .cart-caption {
+  cursor: default;
+  font-size: 30px;
+  height: fit-content;
+  margin: 0;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+.right-side-bar #cart-total-quantity {
+  cursor: default;
+  font-size: 22px;
+  color: gray;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.cart-total-price--caption {
+  cursor: default;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.right-side-bar #cart-total-price {
+  cursor: default;
+  font-size: 30px;
+  color: #4641d9;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.right-side-bar .place-order-button {
+  background-color: #050e40;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  margin-top: 50px;
+}
+
+.right-side-bar .place-order-button:hover {
+  opacity: 0.4;
+}
+
+.site-credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #050e40;
+  border: solid #050e40 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.site-credits .shop-title {
+  font-family: sans-serif, serif;
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.site-credits .developer-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.average-text {
+  font-family: sans-serif, serif;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.developer-info .contact-container {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+  width: fit-content;
+}
+
+.contact-container .icon {
+  height: 100%;
+  margin-right: 5px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title text="SneakerShop"></title>
+    <link rel="stylesheet" href="../static/css/sign-in-page-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navi-href-container" id="navi-top-bar">
+        <!-- Тут сделать динамически -->
+        <a class="href-tile" id="home-href" href="./home-page.html">
+          <img
+            src="../static/icons/home.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Home</p>
+        </a>
+        <a class="href-tile" id="href" href="./catalog-page.html">
+          <img
+            src="../static/icons/catalog.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Catalog</p>
+        </a>
+        <a class="href-tile" id="cart-href" href="./shopping-cart-page.html">
+          <img
+            src="../static/icons/cart.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Cart</p>
+        </a>
+        <a
+          class="href-tile active"
+          id="sign-in-href"
+          href="./sign-in-page.html"
+        >
+          <img
+            src="../static/icons/sign-in.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign in</p>
+        </a>
+        <a class="href-tile" id="user-profile-href" href="./profile-page.html">
+          <img
+            src="../static/icons/profile.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Profile</p>
+        </a>
+        <a class="href-tile" id="sign-out-href" href="./profile-page.html">
+          <img
+            src="../static/icons/sign-out.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign out</p>
+        </a>
+      </nav>
+      <h1 id="shop-title">SneakerShop</h1>
+    </header>
+    <main>
+      <div class="center-page-content">
+        <div class="sign-in-modal-window">
+          <p class="greeting-caption">Welcome to SneakerShop</p>
+          <div class="sign-up-redirect-container">
+            <p class="general-text">Are you new?</p>
+            <a class="sign-up-redirect" href="./sign-up-page.html">Sign up</a>
+          </div>
+          <form class="sign-in-form">
+            <div class="input-container">
+              <label for="identifier">Phone number or email</label>
+              <input
+                type="text"
+                id="identifier"
+                name="user_identifier"
+                required="true"
+                maxlength="20"
+              />
+            </div>
+            <div class="input-container">
+              <label for="identifier">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="user_password"
+                required="true"
+                maxlength="20"
+              />
+            </div>
+            <button class="sign-in-button">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="site-credits">
+        <h2 class="shop-title">SneakerShop</h2>
+        <div class="average-text">
+          <p>© all rights are secured</p>
+          <p>developed by Danila Lisichkin</p>
+        </div>
+        <div class="developer-info">
+          <a
+            id="github-href"
+            class="contact-container"
+            href="https://github.com/danilalisichkin"
+          >
+            <img src="../static/icons/github.svg" class="icon" alt="icon" />
+            <p class="average-text">danilalisichkin</p>
+          </a>
+          <a
+            id="linkedin-href"
+            class="contact-container"
+            href="https://www.linkedin.com/in/danila-lisichkin-48b088291"
+          >
+            <img src="../static/icons/linkedin.svg" class="icon" alt="icon" />
+            <p class="average-text">Danila Lisichkin</p>
+          </a>
+          <a
+            id="mail-href"
+            class="contact-container"
+            href="mailto:lisichkindanila@gmail.com?subject=SneakerShop&body=Hi!"
+          >
+            <img src="../static/icons/mail.svg" class="icon" alt="icon" />
+            <p class="average-text">lisichkindanila@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

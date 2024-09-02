@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title text="SneakerShop"></title>
+    <link rel="stylesheet" href="../static/css/profile-page-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navi-href-container" id="navi-top-bar">
+        <!-- Тут сделать динамически -->
+        <a class="href-tile" id="home-href" href="./home-page.html">
+          <img
+            src="../static/icons/home.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Home</p>
+        </a>
+        <a class="href-tile" id="href" href="./catalog-page.html">
+          <img
+            src="../static/icons/catalog.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Catalog</p>
+        </a>
+        <a class="href-tile" id="cart-href" href="./shopping-cart-page.html">
+          <img
+            src="../static/icons/cart.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Cart</p>
+        </a>
+        <a class="href-tile" id="sign-in-href" href="./sign-in-page.html">
+          <img
+            src="../static/icons/sign-in.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign in</p>
+        </a>
+        <a class="href-tile active" id="user-profile-href" href="./profile-page.html">
+          <img
+            src="../static/icons/profile.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Profile</p>
+        </a>
+        <a class="href-tile" id="sign-out-href" href="null">
+          <img
+            src="../static/icons/sign-out.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign out</p>
+        </a>
+      </nav>
+      <h1 id="shop-title">SneakerShop</h1>
+    </header>
+    <main>
+      <div class="center-page-content">
+        <div class="main-page-load-container">
+          <div class="main-profile-info" style="display: none">
+            <div class="user-name-container">
+              <p id="user-firstname">Danila</p>
+              <p id="user-lastname">Lisichkin</p>
+            </div>
+            <p class="rank-caption" id="user-level">you are 42 lvl</p>
+            <img
+              id="rank-avatar"
+              src="../static/icons/smile-face.svg"
+              alt="rank avatar"
+            />
+            <p id="user-rank">sneaker-head</p>
+          </div>
+          <div class="user-notification-menu" style="display: none">
+            <div class="notifications">
+              <div class="notification">
+                <div class="header">
+                  <input type="checkbox" />
+                  <p class="caption">Order №152 has arrived</p>
+                </div>
+                <p class="date">at 4:21 pm, 12 of July, 2024</p>
+                <p class="payload">
+                  Your order has been arrived to destination
+                </p>
+              </div>
+              <div class="notification old">
+                <div class="header">
+                  <input type="checkbox" />
+                  <p class="caption">Order №121 has been canceled</p>
+                </div>
+                <p class="date">at 7:12 am, 6 of June, 2024</p>
+                <p class="payload">
+                  Your order has been canceled due to your wish
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="user-orders-menu">
+            <div class="orders">
+              <div class="order" id="order_1">
+                <p class="id">Order №111</p>
+                <p class="status complete">Complete</p>
+                <p class="creation-date">Created at 7:12 pm, 3 of July, 2024</p>
+                <p class="complete-date">
+                  Delivered at 5:21 am, 7 of July, 2024
+                </p>
+                <div class="items-products-miniature">
+                  <div class="product">
+                    <img
+                      src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                      class="image"
+                      alt="shoes"
+                    />
+                    <p class="quantity">1pc</p>
+                  </div>
+                  <div class="product">
+                    <img
+                      src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                      class="image"
+                      alt="shoes"
+                    />
+                    <p class="quantity">1pc</p>
+                  </div>
+                  <div class="product">
+                    <img
+                      src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                      class="image"
+                      alt="shoes"
+                    />
+                    <p class="quantity">1pc</p>
+                  </div>
+                </div>
+                <div class="total-cost">
+                  <p class="caption">Total:</p>
+                  <p class="amount">$345.99</p>
+                </div>
+                <div class="payment-container">
+                  <p class="caption">Payment method:</p>
+                  <p class="method">upon receipt, card</p>
+                </div>
+                <div class="delivery-container">
+                  <p class="caption">Delivery address:</p>
+                  <p class="address">Minsk, Nacionalnaya st. 5</p>
+                </div>
+              </div>
+              <div class="order" id="order_2">
+                <p class="id">Order №101</p>
+                <p class="status canceled">Canceled</p>
+                <p class="creation-date">Created at 7:12 pm, 2 of July, 2024</p>
+                <p class="complete-date">
+                  Canceled at 7:24 pm, 2 of July, 2024
+                </p>
+                <div class="items-products-miniature">
+                  <div class="product">
+                    <img
+                      src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                      class="image"
+                      alt="shoes"
+                    />
+                    <p class="quantity">1pc</p>
+                  </div>
+                  <div class="product">
+                    <img
+                      src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                      class="image"
+                      alt="shoes"
+                    />
+                    <p class="quantity">1pc</p>
+                  </div>
+                </div>
+                <div class="total-cost">
+                  <p class="caption">Total:</p>
+                  <p class="amount">$212.99</p>
+                </div>
+                <div class="payment-container">
+                  <p class="caption">Payment method:</p>
+                  <p class="method">upon receipt, cash</p>
+                </div>
+                <div class="delivery-container">
+                  <p class="caption">Delivery address:</p>
+                  <p class="address">Minsk, Nacionalnaya st. 5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side-bar-container">
+          <div class="right-side-bar">
+            <h3 class="menu-caption">Profile menu</h3>
+            <button class="menu-button">main information</button>
+            <button class="menu-button">notifications</button>
+            <button class="menu-button">your orders</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="site-credits">
+        <h2 class="shop-title">SneakerShop</h2>
+        <div class="average-text">
+          <p>© all rights are secured</p>
+          <p>developed by Danila Lisichkin</p>
+        </div>
+        <div class="developer-info">
+          <a
+            id="github-href"
+            class="contact-container"
+            href="https://github.com/danilalisichkin"
+          >
+            <img src="../static/icons/github.svg" class="icon" alt="icon" />
+            <p class="average-text">danilalisichkin</p>
+          </a>
+          <a
+            id="linkedin-href"
+            class="contact-container"
+            href="https://www.linkedin.com/in/danila-lisichkin-48b088291"
+          >
+            <img src="../static/icons/linkedin.svg" class="icon" alt="icon" />
+            <p class="average-text">Danila Lisichkin</p>
+          </a>
+          <a
+            id="mail-href"
+            class="contact-container"
+            href="mailto:lisichkindanila@gmail.com?subject=SneakerShop&body=Hi!"
+          >
+            <img src="../static/icons/mail.svg" class="icon" alt="icon" />
+            <p class="average-text">lisichkindanila@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title text="SneakerShop"></title>
+    <link rel="stylesheet" href="../static/css/catalog-page-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navi-href-container" id="navi-top-bar">
+        <!-- Тут сделать динамически -->
+        <a class="href-tile" id="home-href" href="./home-page.html">
+          <img
+            src="../static/icons/home.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Home</p>
+        </a>
+        <a class="href-tile active" id="href" href="./catalog-page.html">
+          <img
+            src="../static/icons/catalog.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Catalog</p>
+        </a>
+        <a class="href-tile" id="cart-href" href="./shopping-cart-page.html">
+          <img
+            src="../static/icons/cart.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Cart</p>
+        </a>
+        <a class="href-tile" id="sign-in-href" href="./sign-in-page.html">
+          <img
+            src="../static/icons/sign-in.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign in</p>
+        </a>
+        <a class="href-tile" id="user-profile-href" href="./profile-page.html">
+          <img
+            src="../static/icons/profile.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Profile</p>
+        </a>
+        <a class="href-tile" id="sign-out-href" href="null">
+          <img
+            src="../static/icons/sign-out.svg"
+            class="href-tile-icon"
+            alt="icon"
+          />
+          <p class="href-tile-text">Sign out</p>
+        </a>
+      </nav>
+      <h1 id="shop-title">SneakerShop</h1>
+    </header>
+    <main>
+      <div class="center-page-content">
+        <div class="catalog">
+          <p class="category-caption">All sneakers</p>
+          <form class="filter-bar">
+            <div class="search-container">
+              <input
+                name="search-text"
+                id="search-text-input"
+                type="search"
+                placeholder="search"
+              />
+              <img
+                src="../static/icons/search.svg"
+                class="icon"
+                alt="Search Icon"
+              />
+            </div>
+            <div class="filter-field-container">
+              <label for="sort-field-select">filter by</label>
+              <select name="field" id="sort-field" class="sort-field-select">
+                <option value="creation-date">newness</option>
+                <option value="price">price</option>
+              </select>
+            </div>
+            <div class="filter-order">
+              <img
+                src="../static/icons/arrow-down.svg"
+                class="icon"
+                alt="icon"
+              />
+              <img
+                src="../static/icons/arrow-top.svg"
+                class="icon"
+                alt="icon"
+              />
+              <p id="filter-order-text">newest-oldest</p>
+            </div>
+          </form>
+          <div class="items">
+            <!-- Тут сделать динамически -->
+            <div class="product">
+              <div class="image-container">
+                <a href="./product-card-page.html">
+                  <img
+                    src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                    class="image"
+                    alt="shoes"
+                  />
+                </a>
+              </div>
+              <div class="details-container">
+                <p class="price">$199.99</p>
+                <p class="brand-name">New Balance</p>
+                <p class="model-name">530 Pink-Purple</p>
+                <p class="sizes">38.0, 41.0, 43.0 EU</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+              </div>
+              <div class="details-container">
+                <p class="price">$149.99</p>
+                <p class="brand-name">Nike</p>
+                <p class="model-name">Air Max 90 White-Blue</p>
+                <p class="sizes">42.0, 43.0, 44.5, 45.0 EU</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+              </div>
+              <div class="details-container">
+                <p class="price">$149.99</p>
+                <p class="brand-name">Nike</p>
+                <p class="model-name">Air Max 90 White-Blue</p>
+                <p class="sizes">42.0, 43.0, 44.5, 45.0 EU</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+              </div>
+              <div class="details-container">
+                <p class="price">$149.99</p>
+                <p class="brand-name">Nike</p>
+                <p class="model-name">Air Max 90 White-Blue</p>
+                <p class="sizes">42.0, 43.0, 44.5, 45.0 EU</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+              </div>
+              <div class="details-container">
+                <p class="price">$149.99</p>
+                <p class="brand-name">Nike</p>
+                <p class="model-name">Air Max 90 White-Blue</p>
+                <p class="sizes">42.0, 43.0, 44.5, 45.0 EU</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+              </div>
+              <div class="details-container">
+                <p class="price">$149.99</p>
+                <p class="brand-name">Nike</p>
+                <p class="model-name">Air Max 90 White-Blue</p>
+                <p class="sizes">42.0, 43.0, 44.5, 45.0 EU</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image-container">
+                <img
+                  src="https://msc.kickstown.ru/image/cache/catalog/demo/syncms/JFndRKrrjTmx1HpSLkFQJ0_1-1534x1534.png"
+                  class="image"
+                  alt="shoes"
+                />
+              </div>
+              <div class="details-container">
+                <p class="price">$149.99</p>
+                <p class="brand-name">Nike</p>
+                <p class="model-name">Air Max 90 White-Blue</p>
+                <p class="sizes">42.0, 43.0, 44.5, 45.0 EU</p>
+              </div>
+            </div>
+          </div>
+          <div class="page-selection-container">
+            <!-- Тут сделать динамически -->
+            <div class="selection-bar">
+              <button class="button"><</button>
+              <button class="button active">1</button>
+              <button class="button">2</button>
+              <button class="button">3</button>
+              <button class="button">4</button>
+              <button class="button">5</button>
+              <button class="button">></button>
+            </div>
+            <p class="total-count">180 from 6622</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="site-credits">
+        <h2 class="shop-title">SneakerShop</h2>
+        <div class="average-text">
+          <p>© all rights are secured</p>
+          <p>developed by Danila Lisichkin</p>
+        </div>
+        <div class="developer-info">
+          <a
+            id="github-href"
+            class="contact-container"
+            href="https://github.com/danilalisichkin"
+          >
+            <img src="../static/icons/github.svg" class="icon" alt="icon" />
+            <p class="average-text">danilalisichkin</p>
+          </a>
+          <a
+            id="linkedin-href"
+            class="contact-container"
+            href="https://www.linkedin.com/in/danila-lisichkin-48b088291"
+          >
+            <img src="../static/icons/linkedin.svg" class="icon" alt="icon" />
+            <p class="average-text">Danila Lisichkin</p>
+          </a>
+          <a
+            id="mail-href"
+            class="contact-container"
+            href="mailto:lisichkindanila@gmail.com?subject=SneakerShop&body=Hi!"
+          >
+            <img src="../static/icons/mail.svg" class="icon" alt="icon" />
+            <p class="average-text">lisichkindanila@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
